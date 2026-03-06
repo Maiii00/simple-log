@@ -17,6 +17,5 @@ public class KafkaLogStorage implements LogStorageService {
     @Override
     public void save(LogData logData) {
         kafkaTemplate.send("logs", logData.getMethodName(), logData);
-        log.info("logData = {}", logData);
     }
 }
