@@ -4,6 +4,7 @@
 
 ## Quick Start
 ```shell
+cd simple-log
 mvn clean install
 ```
 
